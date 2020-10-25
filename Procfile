@@ -1,1 +1,1 @@
-web: node node_modules/http-server/bin/http-server -p 8888 -a 0.0.0.0
+web: node node_modules/http-server/bin/http-server -p $PORT -a 0.0.0.0
