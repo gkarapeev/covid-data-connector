@@ -1,1 +1,1 @@
-web: node node_modules/http-server/bin/http-server -p 8888 -c-1
+web: node node_modules/http-server/bin/http-server -p 8888 -a 0.0.0.0
