@@ -50,11 +50,7 @@ export const defaultFilterInfo = {
 export const defaultShowAdvanced = Cookie.getJSON('showAdvanced') || false;
 
 export const samples = [
-  '../Examples/html/earthquakeUSGS.html',
-  '../Examples/html/earthquakeMultitable.html',
-  '../Examples/html/earthquakeMultilingual.html',
-  '../Examples/html/IncrementalRefreshConnector.html',
-  '../Examples/html/JoinFilteringExample.html',
+  '../Examples/html/covid-dashboard.html',
 ];
 
 export const defaultMostRecentUrls = Cookie.getJSON('mostRecentUrls') || [...samples];
