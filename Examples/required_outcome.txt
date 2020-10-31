@@ -1,0 +1,4 @@
+1. one HTTP request for each month of the query -> the result count
+2. two requests for the original query 2020-01-10 -> TODAY, for each possible source
+    - one with open access
+    - one without

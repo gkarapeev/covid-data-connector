@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Covid Dashboard</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <style>
+        button {
+            width: 100px;
+        }
+        .cont {
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons {
+            width: 720px;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .buttons button:focus {
+            outline: none;
+        }
+        .buttons button:active {
+            outline: none;
+        }
+        #submit-btn {
+            width: 170px;
+            height: 60px;
+            font-size: 16px;
+        }
+    </style>
+    <div class="cont">
+        <div class="buttons">
+            <button type="button" id="sdg-1" class="query-button btn btn-primary" style="margin: 10px;">SDG-1</button>
+            <button type="button" id="sdg-2" class="query-button btn btn-primary" style="margin: 10px;">SDG-2</button>
+            <button type="button" id="sdg-3" class="query-button btn btn-primary" style="margin: 10px;">SDG-3</button>
+            <button type="button" id="sdg-4" class="query-button btn btn-primary" style="margin: 10px;">SDG-4</button>
+            <button type="button" id="sdg-5" class="query-button btn btn-primary" style="margin: 10px;">SDG-5</button>
+            <button type="button" id="sdg-6" class="query-button btn btn-primary" style="margin: 10px;">SDG-6</button>
+            <button type="button" id="sdg-7" class="query-button btn btn-primary" style="margin: 10px;">SDG-7</button>
+            <button type="button" id="sdg-8" class="query-button btn btn-primary" style="margin: 10px;">SDG-8</button>
+            <button type="button" id="sdg-9" class="query-button btn btn-primary" style="margin: 10px;">SDG-9</button>
+            <button type="button" id="sdg-10" class="query-button btn btn-primary" style="margin: 10px;">SDG-10</button>
+            <button type="button" id="sdg-11" class="query-button btn btn-primary" style="margin: 10px;">SDG-11</button>
+            <button type="button" id="sdg-12" class="query-button btn btn-primary" style="margin: 10px;">SDG-12</button>
+            <button type="button" id="sdg-13" class="query-button btn btn-primary" style="margin: 10px;">SDG-13</button>
+            <button type="button" id="sdg-14" class="query-button btn btn-primary" style="margin: 10px;">SDG-14</button>
+            <button type="button" id="sdg-15" class="query-button btn btn-primary" style="margin: 10px;">SDG-15</button>
+            <button type="button" id="sdg-16" class="query-button btn btn-primary" style="margin: 10px;">SDG-16</button>
+            <button type="button" id="sdg-17" class="query-button btn btn-primary" style="margin: 10px;">SDG-17</button>    
+        </div>
+        
+        <button type="button" id="submit-btn" class="btn btn-success" style="margin: 10px;">GET SCHEMA</button>
+    </div>
+    <script src="../js/covid-dashboard.js" type="text/javascript"></script>
+</body>
+</html>
