@@ -80,7 +80,7 @@ myConnector.getData = async function(table, doneCallback) {
     const utcToday = new Date(Date.UTC(base.getUTCFullYear(), base.getUTCMonth(), base.getUTCDate()));
     const monthPromises = [fetch(queries["sdg_" + tableId]('2020-01-10', '2020-01-31'))];
     
-    for (let d = new Date(Date.UTC(2020, 1, 1)); d < utcToday; d.setUTCMonth(d.getUTCMonth() + 1)) {
+    for (let d = new Date(Date.UTC(2020, 1, 1)); d <= utcToday; d.setUTCMonth(d.getUTCMonth() + 1)) {
         const periodStartString = customDateString(new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)));
         const endDate = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 0));
         const periodEndString = endDate < utcToday ? customDateString(endDate) : customDateString(utcToday);
